@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-Montserrat font-normal text-base;
+}
+
+.container {
+  @apply max-w-[1234px] mx-auto;
+}
+
