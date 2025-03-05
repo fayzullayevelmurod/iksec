@@ -11,6 +11,12 @@ body {
 }
 
 .container {
-  @apply max-w-[1234px] mx-auto;
+  @apply max-w-[1530px] mx-auto;
+}
+
+@media (max-width: 1600px) {
+  .container {
+    @apply px-[25px];
+  }
 }
 

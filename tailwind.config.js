@@ -10,7 +10,11 @@ module.exports = {
         "lg-plus": "992px",
       },
       colors: {
-        "light-gray": "#313245B2",
+        "green": "#75C998",
+        "white-20": "#FFFFFF33",
+        "white-40": "#FFFFFF66",
+        "home-linear": "rgba(2, 33, 59, 0.8);",
+        "green-50": "rgba(28, 71, 82, 0.5)",
       },
     },
   },
