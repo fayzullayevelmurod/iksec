@@ -11,6 +11,10 @@ module.exports = {
       },
       colors: {
         "green": "#75C998",
+        "grey": "#5B6369",
+        "black": "#052237",
+        "blue-dark": "#31879C",
+        "blue-light": "#F3F7F8",
         "white-20": "#FFFFFF33",
         "white-40": "#FFFFFF66",
         "home-linear": "rgba(2, 33, 59, 0.8);",
