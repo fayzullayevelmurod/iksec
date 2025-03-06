@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Montserrat: ['"Montserrat"'],
+        BebasNeue: ['"Bebas Neue"'],
       },
       screens: {
         "lg-plus": "992px",
@@ -18,6 +19,7 @@ module.exports = {
         "blue-light": "#F3F7F8",
         "white-20": "#FFFFFF33",
         "white-40": "#FFFFFF66",
+        "white-80": "#FFFFFFCC",
         "white-90": "#FFFFFFE5",
         "home-linear": "rgba(2, 33, 59, 0.8);",
         "choose-linear": "rgba(2, 33, 59, 0.9);",
