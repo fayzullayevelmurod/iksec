@@ -20,3 +20,9 @@ body {
   }
 }
 
+@media (max-width: 350px) {
+  .container {
+    @apply px-[20px];
+  }
+}
+
