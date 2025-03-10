@@ -1,26 +1,32 @@
-document.querySelectorAll(".range-container").forEach(container => {
-  const slider = container.querySelector(".rangeSlider");
-  const priceValue = container.querySelector(".priceValue");
-  const progressBar = container.querySelector(".progressBar");
-  const thumb = container.querySelector(".thumb");
+function formatNumber(number) {
+  let reversed = String(number).split('').reverse().join('');
+  let formatted = reversed.match(/.{1,3}/g).join(' ');
+  return formatted.split('').reverse().join('');
+}
 
-  function updateSlider() {
-      const val = slider.value;
-      const min = slider.min;
-      const max = slider.max;
-      const percent = ((val - min) / (max - min)) * 100;
+const rangeContainer = document.querySelectorAll('.range-container');
 
-      priceValue.textContent = (val * 1200).toLocaleString(); // Raqamni formatlash
-
-      progressBar.style.width = percent + "%";
-      thumb.style.left = `calc(${percent}% - 10px)`;
-  }
-
-  slider.addEventListener("input", updateSlider);
-  updateSlider(); // Boshlang'ich holatni o'rnatish
-});
+if (rangeContainer.length) {
+  rangeContainer.forEach(el => {
+    const inp = el.querySelector('input[type="range"]');
+    const line = el.querySelector('.line');
+    const maxVal = +el.querySelector('input[type="range"]').max;
+    const valText = el.querySelector('.priceValue');
 
 
+    const handleLine = () => {
+      let val = +inp.value;
+      line.style.width = (100 * val) / maxVal + '%';
+      valText.textContent = formatNumber(val);
+    }
+
+    handleLine();
+    
+    inp.oninput = e => {
+      handleLine()
+    }
+  })
+}
 
 // cooperationSwiper
 var swiper = new Swiper(".cooperationSwiper", {
