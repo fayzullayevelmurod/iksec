@@ -591,16 +591,108 @@
       <!-- calculator -->
       <section class="md:py-[100px] py-[50px] relative">
         <img class="absolute top-0 left-0 w-full h-full object-cover" src="./assets/images/calculator_img.png" alt="">
-        <div class="container relative z-20">
-          <div class="w-[750px]">
-            <div class="md:w-[140px] md:h-[140px] rounded-full flex items-center justify-center bg-green-two mb-[60px]">
-              <img class="md:w-[60px] md:h-[60px] w-[40px] h-[40px]" src="./assets/images/icons/calculator_icon.svg" alt="">
+        <div class="container relative z-20 flex xl:flex-row flex-col items-start justify-between gap-[20px]">
+          <div class="xl:w-[750px] w-full">
+            <div class="md:w-[140px] md:h-[140px] w-[50px] h-[50px] rounded-full flex items-center justify-center bg-green-two md:mb-[60px] mb-[10px]">
+              <img class="md:w-[60px] md:h-[60px] w-[25px] h-[25px]" src="./assets/images/icons/calculator_icon.svg" alt="">
             </div>
             <h3 class="font-bold md:text-[50px] text-[24px] md:leading-[60px] leading-[34px] text-black uppercase">
               расчитайте<br> примерную стоимость
               <span class="font-light block">ит-аутсорсинга для
                 вашей компании</span>
             </h3>
+          </div>
+          <div class="xl:w-[750px] w-full">
+            <div class="flex flex-col md:gap-[13px] gap-[8px]">
+              <div class="range-container bg-white md:p-[25px] p-[10px] rounded-tl-[4px] rounded-tr-[4px] rounded-bl-none rounded-br-none border-[1px] border-[#EFEFEF] relative">
+                <div class="flex items-center justify-between gap-[5px]">
+                  <div class="flex items-center justify-center md:gap-[25px] gap-[10px]">
+                    <div class="md:w-[80px] md:h-[50px] w-[30px] h-[30px] flex justify-center items-center bg-green-light md:text-[16px] md:leading-[24px] text-[12px] leading-[14px] font-medium flex-shrink-0">95</div>
+                    <span class="font-medium md:text-[16px] text-[12px] md:leading-[24px] leading-[14px] text-black">Количество рабочих мест</span>
+                  </div>
+                  <div class="md:text-[18px] text-[14px] md:leading-[24px] leading-[16px] font-bold text-black whitespace-nowrap">
+                    <span class="priceValue">114 000</span> ₽
+                  </div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full">
+                  <div class="progressBar absolute left-0 top-1/2 -translate-y-1/2 h-1 bg-green-400"></div>
+                  <div class="w-full h-1 bg-[#EFF1F0]"></div>
+                  <input type="range" min="1" max="200" value="120"
+                    class="rangeSlider absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-transparent opacity-0 appearance-none cursor-pointer">
+                  <div class="thumb absolute w-[14px] h-[14px] bg-white border-[4px] border-green rounded-full top-1/2 -translate-y-1/2"></div>
+                </div>
+              </div>
+              <div class="range-container bg-white md:p-[25px] p-[10px] rounded-tl-[4px] rounded-tr-[4px] rounded-bl-none rounded-br-none border-[1px] border-[#EFEFEF] relative">
+                <div class="flex items-center justify-between gap-[5px]">
+                  <div class="flex items-center justify-center md:gap-[25px] gap-[10px]">
+                    <div class="md:w-[80px] md:h-[50px] w-[30px] h-[30px] flex justify-center items-center bg-green-light md:text-[16px] md:leading-[24px] text-[12px] leading-[14px] font-medium flex-shrink-0">5</div>
+                    <span class="font-medium md:text-[16px] text-[12px] md:leading-[24px] leading-[14px] text-black">Количество офисов</span>
+                  </div>
+                  <div class="md:text-[18px] text-[14px] md:leading-[24px] leading-[16px] font-bold text-black whitespace-nowrap">
+                    <span class="priceValue">25 000</span> ₽
+                  </div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full">
+                  <div class="progressBar absolute left-0 top-1/2 -translate-y-1/2 h-1 bg-green-400"></div>
+                  <div class="w-full h-1 bg-[#EFF1F0]"></div>
+                  <input type="range" min="1" max="200" value="80"
+                    class="rangeSlider absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-transparent opacity-0 appearance-none cursor-pointer">
+                  <div class="thumb absolute w-[14px] h-[14px] bg-white border-[4px] border-green rounded-full top-1/2 -translate-y-1/2"></div>
+                </div>
+              </div>
+              <div class="range-container bg-white md:p-[25px] p-[10px] rounded-tl-[4px] rounded-tr-[4px] rounded-bl-none rounded-br-none border-[1px] border-[#EFEFEF] relative">
+                <div class="flex items-center justify-between gap-[5px]">
+                  <div class="flex items-center justify-center md:gap-[25px] gap-[10px]">
+                    <div class="md:w-[80px] md:h-[50px] w-[30px] h-[30px] flex justify-center items-center bg-green-light md:text-[16px] md:leading-[24px] text-[12px] leading-[14px] font-medium flex-shrink-0">10</div>
+                    <span class="font-medium md:text-[16px] text-[12px] md:leading-[24px] leading-[14px] text-black">Количество физических серверов</span>
+                  </div>
+                  <div class="md:text-[18px] text-[14px] md:leading-[24px] leading-[16px] font-bold text-black whitespace-nowrap">
+                      <span class="priceValue">35 000</span> ₽
+                    </div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 w-full">
+                  <div class="progressBar absolute left-0 top-1/2 -translate-y-1/2 h-1 bg-green-400"></div>
+                  <div class="w-full h-1 bg-[#EFF1F0]"></div>
+                  <input type="range" min="1" max="200" value="100"
+                    class="rangeSlider absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-transparent opacity-0 appearance-none cursor-pointer">
+                  <div class="thumb absolute w-[14px] h-[14px] bg-white border-[4px] border-green rounded-full top-1/2 -translate-y-1/2"></div>
+                </div>
+              </div>
+              <div class="range-container bg-white md:p-[25px] p-[10px] rounded-tl-[4px] rounded-tr-[4px] rounded-bl-none rounded-br-none border-[1px] border-[#EFEFEF] relative">
+                <div class="flex items-center justify-between gap-[5px]">
+                  <div class="flex items-center justify-center md:gap-[25px] gap-[10px]">
+                    <div class="md:w-[80px] md:h-[50px] w-[30px] h-[30px] flex justify-center items-center bg-green-light md:text-[16px] md:leading-[24px] text-[12px] leading-[14px] font-medium flex-shrink-0">50</div>
+                    <span class="font-medium md:text-[16px] text-[12px] md:leading-[24px] leading-[14px] text-black">Количество виртуальных серверов</span>
+                  </div>
+                  <div class="md:text-[18px] text-[14px] md:leading-[24px] leading-[16px] font-bold text-black whitespace-nowrap">
+                      <span class="priceValue">110 000</span> ₽
+                    </div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 w-full">
+                  <div class="progressBar absolute left-0 top-1/2 -translate-y-1/2 h-1 bg-green-400"></div>
+                  <div class="w-full h-1 bg-[#EFF1F0]"></div>
+                  <input type="range" min="1" max="200" value="120"
+                    class="rangeSlider absolute left-0 top-1/2 -translate-y-1/2 w-full h-1 bg-transparent opacity-0 appearance-none cursor-pointer">
+                  <div class="thumb absolute w-[14px] h-[14px] bg-white border-[4px] border-green rounded-full top-1/2 -translate-y-1/2"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-start sm:flex-row flex-col gap-[10px] justify-between md:mt-[36px] mt-[15px]">
+              <div>
+                <span class="font-medium md:text-[16px] text-[14px] md:leading-[24px] leading-[16px] text-black mb-[10px]">
+                  Итоговая сумма:
+                </span>
+                <h6 class="font-bold md:text-[34px] text-[20px] md:leading-[34px] leading-[22px] text-black">
+                  284 000 <span>₽</span>
+                </h6>
+              </div>
+              <button class="text-sm text-white p-[20px] font-bold uppercase bg-green sm:w-[230px] w-full">
+                оставить заявку
+              </button>
+            </div>
           </div>
         </div>
       </section>
